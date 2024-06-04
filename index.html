@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+         rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Intro to Bootstrap 5</title>
+    </head>
+    <body>
+        <div class="container-fluid p-5 bg-dark text-white text-center">
+            <h1>My First Bootstrap Page</h1>
+            <p>Resize this responsive page to see the effect!</p>
+            <p>Welcome to my site</p> 
+          </div>
+
+          <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/ash-edmonds-0aWZdK8nK2I-unsplash.jpg" alt="Abstract 1" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg" alt="Abstract 2" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/jr-korpa-SFT9G3pAxLY-unsplash.jpg" alt="Abstract 3" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Graphic Artist</h3>
+                <p>A graphic artist is a creative professional who specializes in creating visual content, such as illustrations, logos, advertisements, and other graphic designs. They use artistic skills and design software to communicate messages and ideas visually, often working closely with clients to understand their needs and develop visually appealing solutions. Graphic artists may work on a wide range of projects, including web design, packaging, branding, and more. They must have a keen eye for detail, a strong understanding of color theory, typography, and layout principles, and stay up-to-date on the latest design trends and technologies.</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Tattoo Artist</h3>
+                <p>A tattoo artist is a skilled professional who creates designs and applies them to a person's skin using a needle and ink. They must have a strong understanding of art and design principles, as well as knowledge of different tattoo styles and techniques. Tattoo artists work closely with clients to create custom designs that meet their preferences and expectations. They must also have excellent hand-eye coordination and attention to detail to ensure precise and high-quality work. Additionally, tattoo artists must follow strict hygiene and safety protocols to prevent the spread of infections and ensure the health and safety of their clients.</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Typographer</h3>        
+                <p>A typographer is a professional who specializes in designing and arranging type to create visually appealing and effective text. Their primary focus is on the visual presentation of written language, ensuring that the text is clear, readable, and easy to understand. Typographers work closely with graphic designers, editors, and writers to create a wide range of materials, including books, magazines, newspapers, websites, and advertising materials.</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="container mt-3">
+                    <h2>Card Image</h2>
+                   
+                    <div class="card" style="width:400px">
+                      <img class="card-img-top" src="Images/img_avatar1.png" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <div class="container mt-3">
+                            <h3>Modal Example</h3>
+                            <p>Click on the button to open the modal.</p>
+                            
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                              Open modal
+                            </button>
+                          </div>
+                          
+                          <!-- The Modal -->
+                          <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Modal Heading</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  Modal body..
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <br>
+                    
+                  
+                    <img src="Images/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg" class="rounded-circle" alt="Abstract 1" height="400px" width="400">
+                  </div>
+                  
+              </div>
+              <div class="col-sm-4">
+                <div class="container mt-3">
+                    <h2>Card Image</h2>
+                    
+                    <div class="card" style="width:400px">
+                      <img class="card-img-top" src="Images/img_avatar1.png" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <div class="container mt-3">
+                            <h3>Modal Example</h3>
+                            <p>Click on the button to open the modal.</p>
+                            
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                              Open modal
+                            </button>
+                          </div>
+                          
+                          <!-- The Modal -->
+                          <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Modal Heading</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  Modal body..
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <br>
+                    
+                   
+                    <img src="Images/jr-korpa-SFT9G3pAxLY-unsplash.jpg" class="img-thumbnail" alt="Abstract 2" height="400px" width="400">
+                  </div>
+                  
+              </div>
+              <div class="col-sm-4">
+                <div class="container mt-3">
+                    <h2>Card Image</h2>
+                    
+                    <div class="card" style="width:400px">
+                      <img class="card-img-top" src="Images/img_avatar1.png" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <div class="container mt-3">
+                            <h3>Modal Example</h3>
+                            <p>Click on the button to open the modal.</p>
+                            
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                              Open modal
+                            </button>
+                          </div>
+                          
+                          <!-- The Modal -->
+                          <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Modal Heading</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  Modal body..
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <br>
+                    
+                    
+                    <img src="Images/ash-edmonds-0aWZdK8nK2I-unsplash.jpg" class="rounded" alt="Abstract 3" height="400px" width="400">
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+
+          <footer class="text-center bg-body-tertiary">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="https://facebook.com/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="https://twitter.com/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="https://google.com/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="https://instagram.com/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="https://www.linkedin.com/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="https://github.com/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright:
+              <a class="text-body" href="https://mdbootstrap.com/">www.clydellever10.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
